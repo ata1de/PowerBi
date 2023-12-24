@@ -20,4 +20,15 @@ df_filtered
 
 # Criação das colunas
 col1, col2 = st.columns(2)
-col3, col4, col5 = st.collums(3)
+col3, col4, col5 = st.columns(3)
+
+# Faturamento por mes 
+fat_date = px.bar(df_filtered, x='Date', y='Total', color='City', title='Faturamento por mês')
+col1.plotly_chart(fat_date)
+# Produtos mais vendidos por tempo
+prod_date = px.bar(df_filtered, x='Date', y='Product line', color='City', title='Faturamento por tipo de produto', orientation='h')
+col2.plotly_chart(prod_date)
+
+city_total = df_filtered.groupby('City')[['Total']].sum().reset_index()
+city_date = px.bar(city_total, x='City', y='Total', title='Faturamento por filial')
+col3.plotly_chart(city_date)
