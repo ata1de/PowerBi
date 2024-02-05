@@ -8,8 +8,13 @@ the application contains a sidebar where we can filter the dashboard data, which
 
 ## How Conferer 👀
 Follow the commands below and enjoy the project 
+- Clone the repository
 ```
- 1 - git clone the app
- 2 - execute "streamlit run main.py" in your prompt
- 3 - just enjoy
+git clone https://github.com/ata1de/PowerBi.git
 ```
+- Execute in your prompt
+```
+streamlit run main.py
+```
+- Open in uour browser 
+
