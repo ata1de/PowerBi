@@ -28,7 +28,7 @@ col1.plotly_chart(fat_date)
 # Produtos mais vendidos por tempo
 prod_date = px.bar(df_filtered, x='Date', y='Product line', color='City', title='Faturamento por tipo de produto', orientation='h')
 col2.plotly_chart(prod_date)
-
+#Faturamento por filial
 city_total = df_filtered.groupby('City')[['Total']].sum().reset_index()
 city_date = px.bar(city_total, x='City', y='Total', title='Faturamento por filial')
 col3.plotly_chart(city_date)
