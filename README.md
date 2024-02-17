@@ -1,5 +1,5 @@
 # PowerBi Python 🔍
-It was a mini project based on YouTube, but it was very important to improve my skills and knowledge in pandas, as well as giving me the opportunity to learn about the streamlit and plotly.express libraries
+It was a mini project based on YouTube video, but it was very important to improve my skills and knowledge in pandas, as well as giving me the opportunity to learn about the streamlit and plotly.express libraries
 
 
 ## Image Dashboard 🌆
